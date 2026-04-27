@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — amazinghr</title>
+  <meta name="description" content="Get in touch with Amazing HR Services. Three office locations across Delhi NCR — Dwarka, Ghaziabad, and Noida. Reach us at inspire@amazinghr.org." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg ahr-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column" href="index.html">
+        <span class="brand-name">amazinghr</span>
+        <span class="brand-tagline">Integrity | Passion | Excellence</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+          <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn-nav-cta" href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container position-relative" style="z-index:1;">
+      <nav aria-label="breadcrumb" class="breadcrumb-ahr">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.55); text-decoration:none;">Home</a></li>
+          <li class="breadcrumb-item active">Contact</li>
+        </ol>
+      </nav>
+      <h1>Get in Touch</h1>
+      <p>We will be more than happy to help. Reach out and let's start a conversation about what your organisation needs.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT MAIN -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- FORM -->
+        <div class="col-lg-7 fade-in">
+          <span class="section-label">Send Us a Message</span>
+          <h2 class="section-title">Let's Start a Conversation</h2>
+          <div class="section-divider"></div>
+          <p style="color:var(--ahr-muted); margin-bottom:2rem;">Fill in the form below and a member of our team will respond within one business day. For urgent requirements, call us directly.</p>
+
+          <!-- FORM -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name">Full Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="company">Company / Organisation *</label>
+                <input type="text" class="form-control" id="company" placeholder="Company name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="your@company.com" required />
+              </div>
+              <div class="col-md-6">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+91 XXXXX XXXXX" />
+              </div>
+              <div class="col-12">
+                <label for="designation">Your Designation</label>
+                <input type="text" class="form-control" id="designation" placeholder="e.g. CHRO, VP HR, HR Manager" />
+              </div>
+              <div class="col-12">
+                <label for="service">Service Interest</label>
+                <select class="form-select" id="service">
+                  <option value="" disabled selected>Select a service area</option>
+                  <option>Talent Fulfilment</option>
+                  <option>Learning &amp; Development</option>
+                  <option>OD Interventions</option>
+                  <option>HR Systems &amp; Processes</option>
+                  <option>Innovation &amp; Customised Solutions</option>
+                  <option>Multiple Services / Not Sure Yet</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message">Your Message *</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your organisation and the challenge you'd like our help with…" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="consent" required />
+                  <label class="form-check-label" for="consent" style="font-weight:400; font-size:0.82rem; color:var(--ahr-muted);">
+                    I agree to be contacted by Amazing HR Services regarding this enquiry. We respect your privacy and will never share your information with third parties.
+                  </label>
+                </div>
+                <button type="submit" class="btn-ahr btn-ahr-primary btn w-100" style="padding:0.85rem;">
+                  Send Message &nbsp;<i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- SUCCESS STATE -->
+          <div id="formSuccess" style="display:none; text-align:center; padding:3rem 2rem; background:var(--ahr-bg); border-radius:12px; border:1px solid var(--ahr-border);">
+            <div style="width:72px; height:72px; background:linear-gradient(135deg, var(--ahr-teal), #0369A1); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; font-size:2rem; color:#fff;">
+              <i class="bi bi-check-lg"></i>
+            </div>
+            <h4 style="color:var(--ahr-navy); font-weight:800; margin-bottom:0.75rem;">Message Received!</h4>
+            <p style="color:var(--ahr-muted); max-width:400px; margin:0 auto 1.5rem; line-height:1.8;">Thank you for reaching out. A member of the Amazing HR team will respond within one business day.</p>
+            <p style="color:var(--ahr-muted); font-size:0.88rem;">For urgent requirements: <a href="mailto:inspire@amazinghr.org" style="color:var(--ahr-teal); font-weight:600;">inspire@amazinghr.org</a></p>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-5 fade-in fade-in-delay-2">
+          <span class="section-label">Direct Contact</span>
+          <h2 class="section-title">Contact Details</h2>
+          <div class="section-divider"></div>
+
+          <!-- Email -->
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div style="width:48px; height:48px; min-width:48px; background:var(--ahr-navy); border-radius:10px; display:flex; align-items:center; justify-content:center;">
+              <i class="bi bi-envelope-fill" style="color:var(--ahr-teal); font-size:1.1rem;"></i>
+            </div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); margin-bottom:0.2rem; font-size:0.9rem;">Email</p>
+              <a href="mailto:inspire@amazinghr.org" style="color:var(--ahr-muted); text-decoration:none; font-size:0.9rem;">inspire@amazinghr.org</a>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0.2rem 0 0;">We respond within one business day</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div style="width:48px; height:48px; min-width:48px; background:var(--ahr-navy); border-radius:10px; display:flex; align-items:center; justify-content:center;">
+              <i class="bi bi-telephone-fill" style="color:var(--ahr-teal); font-size:1.1rem;"></i>
+            </div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); margin-bottom:0.2rem; font-size:0.9rem;">Phone</p>
+              <a href="tel:+911202658379" style="color:var(--ahr-muted); text-decoration:none; font-size:0.9rem;">+91-120-2658379</a>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0.2rem 0 0;">Mon – Fri, 9:00 AM – 6:00 PM IST</p>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div style="width:48px; height:48px; min-width:48px; background:var(--ahr-navy); border-radius:10px; display:flex; align-items:center; justify-content:center;">
+              <i class="bi bi-linkedin" style="color:var(--ahr-teal); font-size:1.1rem;"></i>
+            </div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); margin-bottom:0.2rem; font-size:0.9rem;">LinkedIn</p>
+              <a href="https://www.linkedin.com/company/amazing-hr-services-pvt-ltd-/" target="_blank" rel="noopener" style="color:var(--ahr-muted); text-decoration:none; font-size:0.9rem;">Amazing HR Services Pvt Ltd</a>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0.2rem 0 0;">Connect with us on LinkedIn</p>
+            </div>
+          </div>
+
+          <hr style="border-color:var(--ahr-border); margin:1.75rem 0;">
+
+          <!-- Director Contacts -->
+          <h5 style="font-size:0.82rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--ahr-teal); margin-bottom:1.25rem;">Leadership Direct</h5>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="team-avatar av-navy" style="width:42px; height:42px; font-size:0.9rem; flex-shrink:0; font-style:italic;">SS</div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); font-size:0.88rem; margin-bottom:0.1rem;">Swati Sonkar</p>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0;">Managing Director &nbsp;·&nbsp; <a href="tel:+919560707711" style="color:var(--ahr-teal); text-decoration:none;">+91 95607 07711</a></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="team-avatar av-teal" style="width:42px; height:42px; font-size:0.9rem; flex-shrink:0; font-style:italic;">JS</div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); font-size:0.88rem; margin-bottom:0.1rem;">Jaya Sinha</p>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0;">Director &nbsp;·&nbsp; <a href="tel:+919910300503" style="color:var(--ahr-teal); text-decoration:none;">+91 99103 00503</a></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="team-avatar av-blue" style="width:42px; height:42px; font-size:0.9rem; flex-shrink:0; font-style:italic;">VT</div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); font-size:0.88rem; margin-bottom:0.1rem;">Vani Tyagi</p>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0;">Director &nbsp;·&nbsp; <a href="tel:+919910745811" style="color:var(--ahr-teal); text-decoration:none;">+91 99107 45811</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICES -->
+  <section class="section-pad section-bg">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <span class="section-label">Where We Are</span>
+        <h2 class="section-title">Our Offices</h2>
+        <div class="section-divider mx-auto"></div>
+        <p class="section-lead mx-auto">Three locations across Delhi NCR — so we are always close to where your business is.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-4 fade-in fade-in-delay-1">
+          <div class="office-card">
+            <div class="office-label">Head Office</div>
+            <h5 style="font-size:1rem; font-weight:800; color:var(--ahr-navy); margin-bottom:1rem;">New Delhi — Dwarka</h5>
+            <div class="d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt-fill" style="color:var(--ahr-teal); margin-top:2px; flex-shrink:0;"></i>
+              <p style="font-size:0.88rem; color:var(--ahr-muted); line-height:1.75; margin:0;">325, UGF, Block-B,<br>Sector-19, Dwarka,<br>New Delhi – 110075</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <a href="mailto:inspire@amazinghr.org" style="font-size:0.85rem; color:var(--ahr-muted); text-decoration:none;">inspire@amazinghr.org</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <span style="font-size:0.85rem; color:var(--ahr-muted);">+91-120-2658379</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in fade-in-delay-2">
+          <div class="office-card">
+            <div class="office-label">Branch Office</div>
+            <h5 style="font-size:1rem; font-weight:800; color:var(--ahr-navy); margin-bottom:1rem;">Ghaziabad</h5>
+            <div class="d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt-fill" style="color:var(--ahr-teal); margin-top:2px; flex-shrink:0;"></i>
+              <p style="font-size:0.88rem; color:var(--ahr-muted); line-height:1.75; margin:0;">703B, Gulmohur Greens,<br>Mohan Nagar,<br>Ghaziabad – 201007</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <a href="mailto:inspire@amazinghr.org" style="font-size:0.85rem; color:var(--ahr-muted); text-decoration:none;">inspire@amazinghr.org</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <span style="font-size:0.85rem; color:var(--ahr-muted);">+91-120-2658379</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in fade-in-delay-3">
+          <div class="office-card">
+            <div class="office-label">Branch Office</div>
+            <h5 style="font-size:1rem; font-weight:800; color:var(--ahr-navy); margin-bottom:1rem;">Noida</h5>
+            <div class="d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt-fill" style="color:var(--ahr-teal); margin-top:2px; flex-shrink:0;"></i>
+              <p style="font-size:0.88rem; color:var(--ahr-muted); line-height:1.75; margin:0;">A-27, Sector – 16,<br>Noida – 201301</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <a href="mailto:inspire@amazinghr.org" style="font-size:0.85rem; color:var(--ahr-muted); text-decoration:none;">inspire@amazinghr.org</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill" style="color:var(--ahr-teal); font-size:0.85rem;"></i>
+              <span style="font-size:0.85rem; color:var(--ahr-muted);">+91-120-2658379</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STAY AMAZED -->
+  <section class="section-pad-sm text-center" style="background:var(--ahr-navy);">
+    <div class="container">
+      <p class="fst-italic mb-0" style="font-size:2.25rem; font-weight:700; color:var(--ahr-teal); opacity:0.85;">Stay amazed…..</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ahr-footer pt-5">
+    <div class="container">
+      <div class="row g-4 pb-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="mb-3">
+            <span style="font-size:1.5rem; font-weight:800; font-style:italic; color:#fff; letter-spacing:-0.5px; display:block;">amazinghr</span>
+            <span style="font-size:0.6rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.45);">Integrity | Passion | Excellence</span>
+          </div>
+          <p class="small mb-3" style="color:rgba(255,255,255,0.5); line-height:1.85;">Unique HR Solutions company helping businesses overcome HR challenges with innovation and technology.</p>
+          <a href="https://www.linkedin.com/company/amazing-hr-services-pvt-ltd-/" target="_blank" rel="noopener" class="btn btn-sm" style="border:1px solid rgba(255,255,255,0.2); color:rgba(255,255,255,0.65); font-size:0.8rem; border-radius:4px;"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <p class="footer-head">Quick Links</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="leadership.html" class="footer-link">Leadership</a></li>
+            <li><a href="insights.html" class="footer-link">Insights</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-head">Our Services</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="services.html#talent" class="footer-link">Talent Fulfilment</a></li>
+            <li><a href="services.html#learning" class="footer-link">Learning &amp; Development</a></li>
+            <li><a href="services.html#od" class="footer-link">OD Interventions</a></li>
+            <li><a href="services.html#hr-systems" class="footer-link">HR Systems &amp; Processes</a></li>
+            <li><a href="services.html#innovation" class="footer-link">Innovation &amp; Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-head">Contact Us</p>
+          <p class="small mb-2" style="color:rgba(255,255,255,0.5);"><i class="bi bi-envelope-fill me-2" style="color:var(--ahr-teal);"></i><a href="mailto:inspire@amazinghr.org" style="color:rgba(255,255,255,0.5); text-decoration:none;">inspire@amazinghr.org</a></p>
+          <p class="small mb-3" style="color:rgba(255,255,255,0.5);"><i class="bi bi-telephone-fill me-2" style="color:var(--ahr-teal);"></i>+91-120-2658379</p>
+          <p class="small fw-semibold mb-1" style="color:rgba(255,255,255,0.7);">Head Office</p>
+          <p class="small mb-0" style="color:rgba(255,255,255,0.5); line-height:1.8;">325, UGF, Block-B, Sector-19,<br>Dwarka, New Delhi – 110075</p>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,0.08); margin:0;">
+      <div class="row align-items-center py-3">
+        <div class="col-md-7 text-center text-md-start">
+          <p class="small mb-0" style="color:rgba(255,255,255,0.35);">&copy; 2024 Amazing HR Services Pvt Ltd. All rights reserved.</p>
+        </div>
+        <div class="col-md-5 text-center text-md-end mt-2 mt-md-0">
+          <p class="small mb-0 fst-italic" style="color:rgba(255,255,255,0.45);">Stay amazed…..</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

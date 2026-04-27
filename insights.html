@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — amazinghr</title>
+  <meta name="description" content="HR thought leadership from the Amazing HR team — practical insights on talent acquisition, leadership development, OD, compliance, and the future of HR in India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg ahr-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column" href="index.html">
+        <span class="brand-name">amazinghr</span>
+        <span class="brand-tagline">Integrity | Passion | Excellence</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+          <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn-nav-cta" href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container position-relative" style="z-index:1;">
+      <nav aria-label="breadcrumb" class="breadcrumb-ahr">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.55); text-decoration:none;">Home</a></li>
+          <li class="breadcrumb-item active">Insights</li>
+        </ol>
+      </nav>
+      <h1>HR Insights &amp; Thought Leadership</h1>
+      <p>Practical perspectives on talent, leadership, organisation development, and the future of HR — from the Amazing HR consortium.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLE -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5 fade-in">
+        <div class="col-lg-6">
+          <div style="background:linear-gradient(135deg, var(--ahr-navy), var(--ahr-navy-light)); border-radius:14px; height:320px; display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-person-x-fill" style="font-size:5rem; color:rgba(255,255,255,0.2);"></i>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span style="font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ahr-teal);">Featured Article</span>
+          <h2 style="font-size:1.75rem; font-weight:800; color:var(--ahr-navy); margin-top:0.5rem; margin-bottom:1rem; line-height:1.35;">The Hidden Cost of Ghosting in Recruitment</h2>
+          <p style="color:var(--ahr-muted); line-height:1.9; margin-bottom:1rem;">Ghosting isn't just a candidate behaviour — it's a symptom. When candidates ghost employers, it signals a disconnect in how organisations communicate, engage, and value talent at the earliest stage of the relationship.</p>
+          <p style="color:var(--ahr-muted); line-height:1.9; margin-bottom:1.5rem;">The cost goes far beyond a wasted interview slot. There's the recruiter's time, the hiring manager's preparation, the delay in onboarding, and perhaps most critically — the signal it sends about your employer brand in a connected talent market.</p>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="team-avatar av-teal" style="width:42px; height:42px; font-size:0.85rem; font-style:italic; flex-shrink:0;">JS</div>
+            <div>
+              <p style="font-weight:700; color:var(--ahr-navy); font-size:0.88rem; margin:0;">Jaya Sinha, Director</p>
+              <p style="font-size:0.78rem; color:var(--ahr-muted); margin:0;">March 2024 &nbsp;·&nbsp; 6 min read</p>
+            </div>
+          </div>
+          <a href="#" class="btn-ahr btn-ahr-primary btn">Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL ARTICLES -->
+  <section class="section-pad section-bg">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <span class="section-label">All Articles</span>
+        <h2 class="section-title">Latest from Our Consortium</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <!-- Filter Tags -->
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 fade-in">
+        <button class="btn btn-sm" style="background:var(--ahr-navy); color:#fff; border:none; border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">All Topics</button>
+        <button class="btn btn-sm" style="background:#fff; color:var(--ahr-navy); border:1px solid var(--ahr-border); border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">Talent Acquisition</button>
+        <button class="btn btn-sm" style="background:#fff; color:var(--ahr-navy); border:1px solid var(--ahr-border); border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">Leadership</button>
+        <button class="btn btn-sm" style="background:#fff; color:var(--ahr-navy); border:1px solid var(--ahr-border); border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">Organisation Development</button>
+        <button class="btn btn-sm" style="background:#fff; color:var(--ahr-navy); border:1px solid var(--ahr-border); border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">HR Analytics</button>
+        <button class="btn btn-sm" style="background:#fff; color:var(--ahr-navy); border:1px solid var(--ahr-border); border-radius:20px; padding:5px 16px; font-size:0.8rem; font-weight:600;">Innovation</button>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Article 1 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-1">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, var(--ahr-navy), var(--ahr-navy-light));">
+              <i class="bi bi-person-x-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Talent Acquisition</p>
+              <h3 class="insight-title">The Hidden Cost of Ghosting in Recruitment</h3>
+              <p class="insight-excerpt">Ghosting isn't just rude — it's data. Learn how anonymous feedback processes are giving organisations unprecedented visibility into why talent disappears before Day 1.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Jaya Sinha</span>
+                <span><i class="bi bi-calendar3 me-1"></i>March 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-2">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #0369A1, #0EA5E9);">
+              <i class="bi bi-building-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Leadership</p>
+              <h3 class="insight-title">Why Senior Leadership Alignment is the Foundation of Great HR</h3>
+              <p class="insight-excerpt">HR transformation fails when it's driven bottom-up. The most effective changes begin where power lives — in the boardroom. A framework for getting alignment before execution.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Swati Sonkar</span>
+                <span><i class="bi bi-calendar3 me-1"></i>February 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-3">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #059669, #10B981);">
+              <i class="bi bi-search" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Talent Acquisition</p>
+              <h3 class="insight-title">Solving the 120-Day Problem: A New Approach to Niche Hiring</h3>
+              <p class="insight-excerpt">When a role remains unfilled for four months, the business has already paid the price. Here's how specialised sourcing methodology and network intelligence changes the equation.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Swati Sonkar</span>
+                <span><i class="bi bi-calendar3 me-1"></i>January 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-1">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #7C3AED, #A78BFA);">
+              <i class="bi bi-emoji-smile-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Organisation Development</p>
+              <h3 class="insight-title">Building a Culture of Employee Delight: Beyond the Basics</h3>
+              <p class="insight-excerpt">Employee satisfaction is the floor, not the ceiling. Organisations that build cultures of genuine delight see measurably lower attrition, higher productivity, and stronger employer brands.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Vani Tyagi</span>
+                <span><i class="bi bi-calendar3 me-1"></i>December 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-2">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #D97706, #F59E0B);">
+              <i class="bi bi-bar-chart-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">HR Analytics</p>
+              <h3 class="insight-title">HR Analytics: Turning People Data into Strategic Decisions</h3>
+              <p class="insight-excerpt">Most organisations collect more HR data than they use. The gap between collection and insight is where opportunity lives. A practical guide to building an analytics-first HR function.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Jaya Sinha</span>
+                <span><i class="bi bi-calendar3 me-1"></i>November 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-3">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #DC2626, #F87171);">
+              <i class="bi bi-graph-up-arrow" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Innovation</p>
+              <h3 class="insight-title">The Future of Performance Management in the Indian Workplace</h3>
+              <p class="insight-excerpt">Annual appraisal cycles are a relic. The Indian workplace is evolving — and so must the philosophy of how we evaluate, develop, and reward performance in real-time.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Vani Tyagi</span>
+                <span><i class="bi bi-calendar3 me-1"></i>October 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-1">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #0F766E, #14B8A6);">
+              <i class="bi bi-shield-lock-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Compliance</p>
+              <h3 class="insight-title">POSH at Work: Moving from Compliance to Culture</h3>
+              <p class="insight-excerpt">The POSH Act is not a checkbox exercise. Organisations that treat it as one are exposed — legally and culturally. Building a genuinely safe workplace requires more than a policy document.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Amazing HR Team</span>
+                <span><i class="bi bi-calendar3 me-1"></i>September 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 8 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-2">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #1D4ED8, var(--ahr-blue));">
+              <i class="bi bi-brain" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Talent Acquisition</p>
+              <h3 class="insight-title">The Power of Psychometrics in Modern Hiring</h3>
+              <p class="insight-excerpt">CVs reveal what someone has done. Psychometric assessments reveal who someone is. The combination changes hiring decisions — reducing mis-hires and building teams that actually work together.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Jaya Sinha</span>
+                <span><i class="bi bi-calendar3 me-1"></i>August 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 9 -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-3">
+          <div class="insight-card">
+            <div class="insight-img" style="background:linear-gradient(135deg, #4C1D95, #7C3AED);">
+              <i class="bi bi-briefcase-fill" style="color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="insight-body">
+              <p class="insight-cat">Organisation Development</p>
+              <h3 class="insight-title">Competency Frameworks That Actually Drive Behaviour</h3>
+              <p class="insight-excerpt">Most competency frameworks gather dust after launch. Building frameworks that change behaviour requires design thinking, business alignment, and a change management plan from day one.</p>
+              <div class="insight-meta d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-person-fill me-1"></i>Vani Tyagi</span>
+                <span><i class="bi bi-calendar3 me-1"></i>July 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination (visual) -->
+      <div class="d-flex justify-content-center mt-5 fade-in">
+        <nav>
+          <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="#" style="background:var(--ahr-navy); border-color:var(--ahr-navy);">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color:var(--ahr-navy); border-color:var(--ahr-border);">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color:var(--ahr-navy); border-color:var(--ahr-border);">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color:var(--ahr-navy); border-color:var(--ahr-border);"><i class="bi bi-arrow-right"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="cta-section text-center">
+    <div class="container position-relative" style="z-index:1;">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 fade-in">
+          <span class="section-label" style="color:rgba(14,165,233,0.9);">Stay Updated</span>
+          <h2 class="section-title section-title-light mb-3">HR Insights, Delivered.</h2>
+          <p class="mb-5" style="color:rgba(255,255,255,0.68);">Get the latest thinking from our consortium — straight to your inbox.</p>
+          <div class="d-flex gap-2 justify-content-center flex-wrap">
+            <input type="email" class="form-control" placeholder="your@email.com" style="max-width:280px; border-radius:4px; border:none; padding:0.7rem 1rem;" />
+            <button class="btn-ahr btn-ahr-teal btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ahr-footer pt-5">
+    <div class="container">
+      <div class="row g-4 pb-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="mb-3">
+            <span style="font-size:1.5rem; font-weight:800; font-style:italic; color:#fff; letter-spacing:-0.5px; display:block;">amazinghr</span>
+            <span style="font-size:0.6rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.45);">Integrity | Passion | Excellence</span>
+          </div>
+          <p class="small mb-3" style="color:rgba(255,255,255,0.5); line-height:1.85;">Unique HR Solutions company helping businesses overcome HR challenges with innovation and technology.</p>
+          <a href="https://www.linkedin.com/company/amazing-hr-services-pvt-ltd-/" target="_blank" rel="noopener" class="btn btn-sm" style="border:1px solid rgba(255,255,255,0.2); color:rgba(255,255,255,0.65); font-size:0.8rem; border-radius:4px;"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <p class="footer-head">Quick Links</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="leadership.html" class="footer-link">Leadership</a></li>
+            <li><a href="insights.html" class="footer-link">Insights</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-head">Our Services</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="services.html#talent" class="footer-link">Talent Fulfilment</a></li>
+            <li><a href="services.html#learning" class="footer-link">Learning &amp; Development</a></li>
+            <li><a href="services.html#od" class="footer-link">OD Interventions</a></li>
+            <li><a href="services.html#hr-systems" class="footer-link">HR Systems &amp; Processes</a></li>
+            <li><a href="services.html#innovation" class="footer-link">Innovation &amp; Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-head">Contact Us</p>
+          <p class="small mb-2" style="color:rgba(255,255,255,0.5);"><i class="bi bi-envelope-fill me-2" style="color:var(--ahr-teal);"></i><a href="mailto:inspire@amazinghr.org" style="color:rgba(255,255,255,0.5); text-decoration:none;">inspire@amazinghr.org</a></p>
+          <p class="small mb-3" style="color:rgba(255,255,255,0.5);"><i class="bi bi-telephone-fill me-2" style="color:var(--ahr-teal);"></i>+91-120-2658379</p>
+          <p class="small fw-semibold mb-1" style="color:rgba(255,255,255,0.7);">Head Office</p>
+          <p class="small mb-0" style="color:rgba(255,255,255,0.5); line-height:1.8;">325, UGF, Block-B, Sector-19,<br>Dwarka, New Delhi – 110075</p>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,0.08); margin:0;">
+      <div class="row align-items-center py-3">
+        <div class="col-md-7 text-center text-md-start">
+          <p class="small mb-0" style="color:rgba(255,255,255,0.35);">&copy; 2024 Amazing HR Services Pvt Ltd. All rights reserved.</p>
+        </div>
+        <div class="col-md-5 text-center text-md-end mt-2 mt-md-0">
+          <p class="small mb-0 fst-italic" style="color:rgba(255,255,255,0.45);">Stay amazed…..</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
