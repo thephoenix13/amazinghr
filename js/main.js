@@ -59,19 +59,36 @@ document.addEventListener('DOMContentLoaded', function () {
     counters.forEach(c => cObs.observe(c));
   }
 
-  // ---- Contact form dummy submit ----
+  // ---- Contact form — Web3Forms submission ----
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const btn = form.querySelector('[type="submit"]');
       btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>Sending…';
       btn.disabled = true;
-      setTimeout(() => {
-        form.style.display = 'none';
-        const msg = document.getElementById('formSuccess');
-        if (msg) msg.style.display = 'block';
-      }, 1600);
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data
+        });
+        const json = await res.json();
+        if (json.success) {
+          form.style.display = 'none';
+          const msg = document.getElementById('formSuccess');
+          if (msg) msg.style.display = 'block';
+        } else {
+          btn.innerHTML = 'Send Message &nbsp;<i class="bi bi-send-fill"></i>';
+          btn.disabled = false;
+          alert('Something went wrong. Please try again or email us directly at inspire@amazinghr.org');
+        }
+      } catch {
+        btn.innerHTML = 'Send Message &nbsp;<i class="bi bi-send-fill"></i>';
+        btn.disabled = false;
+        alert('Network error. Please check your connection and try again.');
+      }
     });
   }
 
