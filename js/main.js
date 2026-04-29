@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     counters.forEach(c => cObs.observe(c));
   }
 
-  // ---- Contact form — Web3Forms submission ----
+  // ---- Contact form — PHP mailer submission ----
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', async function (e) {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const data = new FormData(form);
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch('send_mail.php', {
           method: 'POST',
           body: data
         });
