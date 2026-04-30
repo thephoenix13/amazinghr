@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // ============================================================
 //  AmazingHR — Contact Form Mailer
 // ============================================================
@@ -61,7 +61,7 @@ $confirm_body  = "Dear $name,\n\n";
 $confirm_body .= "Thank you for reaching out to Amazing HR.\n\n";
 $confirm_body .= "We have received your enquiry and a member of our team will get back to you within one business day.\n\n";
 $confirm_body .= "For urgent requirements, you can reach us at:\n";
-$confirm_body .= "Email : inspire@amazinghr.org\n";
+$confirm_body .= "Email : dhyan@amazing-hr.com\n";
 $confirm_body .= "Phone : +91-120-2658379\n\n";
 $confirm_body .= "Here is a summary of what you submitted:\n";
 $confirm_body .= "----------------------------------------\n";

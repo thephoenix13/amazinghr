@@ -1,4 +1,4 @@
-// ============================================
+﻿// ============================================
 //   Amazing HR — Main JavaScript
 //   amazinghr.org
 // ============================================
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           btn.innerHTML = 'Send Message &nbsp;<i class="bi bi-send-fill"></i>';
           btn.disabled = false;
-          alert('Something went wrong. Please try again or email us directly at inspire@amazinghr.org');
+          alert('Something went wrong. Please try again or email us directly at dhyan@amazing-hr.com');
         }
       } catch {
         btn.innerHTML = 'Send Message &nbsp;<i class="bi bi-send-fill"></i>';
